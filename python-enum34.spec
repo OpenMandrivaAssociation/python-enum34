@@ -1,6 +1,6 @@
 Name:           python-enum34
 Version:        1.1.4
-Release:        1
+Release:        2
 Group:          Development/Python
 Summary:        Backport of Python 3.4 Enum
 License:        BSD
