@@ -1,12 +1,12 @@
 Name:           python-enum34
-Version:        1.1.4
-Release:        2
+Version:        1.1.6
+Release:        1
 Group:          Development/Python
 Summary:        Backport of Python 3.4 Enum
 License:        BSD
 BuildArch:      noarch
 URL:            https://pypi.python.org/pypi/enum34
-Source0:        https://pypi.python.org/packages/source/e/enum34/enum34-%{version}.tar.gz
+Source0:        https://pypi.io/packages/source/e/enum34/enum34-%{version}.tar.gz
 
 BuildRequires:  python2-devel
 BuildRequires:  python2-setuptools
@@ -30,13 +30,13 @@ in an enumeration.
 %setup -q -n enum34-%{version}
 
 %build
-%{__python2} setup.py build
+python setup.py build
 
 %install
-%{__python2} setup.py install --skip-build --root %{buildroot}
+python setup.py install --skip-build --root %{buildroot}
 # remove docs from sitelib, we'll put them in doc dir instead
-rm -rf %{buildroot}%{python2_sitelib}/enum/{LICENSE,README,doc}
+rm -rf %{buildroot}%{py_puresitedir}/enum/{LICENSE,README,doc}
 
 %files
 %doc PKG-INFO enum/LICENSE enum/README enum/doc/enum.rst
-%{python2_sitelib}/*
+%{py_puresitedir}/*

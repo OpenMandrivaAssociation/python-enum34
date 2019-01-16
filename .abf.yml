@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   enum34-1.1.4.tar.gz: a075655a706842853c9e6cae575369c50f07542e
+sources:
+  enum34-1.1.6.tar.gz: 014ef5878333ff91099893d615192c8cd0b1525a
