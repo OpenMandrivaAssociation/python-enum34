@@ -30,10 +30,10 @@ in an enumeration.
 %setup -q -n enum34-%{version}
 
 %build
-%{__python2} setup.py build
+%py2_build
 
 %install
-%{__python2} setup.py install --skip-build --root %{buildroot}
+%py2_install
 # remove docs from sitelib, we'll put them in doc dir instead
 rm -rf %{buildroot}%{python2_sitelib}/enum/{LICENSE,README,doc}
 
