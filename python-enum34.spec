@@ -1,14 +1,14 @@
 %define module enum34
 
 Name:           python-%{module}
-Version:	1.1.9
+Version:	1.1.10
 Release:	1
 Group:          Development/Python
 Summary:        Backport of Python 3.4 Enum
 License:        BSD
 BuildArch:      noarch
 URL:            https://pypi.python.org/pypi/enum34
-Source0:	https://files.pythonhosted.org/packages/a4/04/94310230b388f6c1992cec62716229b5f2258ad14002346509152d398e3e/enum34-1.1.9.tar.gz
+Source0:	https://files.pythonhosted.org/packages/11/c4/2da1f4952ba476677a42f25cd32ab8aaf0e1c0d0e00b89822b835c7e654c/enum34-1.1.10.tar.gz
 
 
 %description
