@@ -2,7 +2,7 @@
 
 Name:           python-%{module}
 Version:	1.1.10
-Release:	1
+Release:	2
 Group:          Development/Python
 Summary:        Backport of Python 3.4 Enum
 License:        BSD
